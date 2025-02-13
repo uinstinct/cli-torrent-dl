@@ -181,10 +181,9 @@ PS1=$PS1B
 . "$VENV_DIR/bin/activate"
 pip3 install -r "$SCRIPT_DIR/requirements.txt"
 
-while true; do
-	# This ugly expansion is to get the last elem of $LN_CMD in a more compatible way.
-	printf ${C_GREEN}
-	printf ${C_NONE}
-	"${LN_CMD[@]}"
-	printf "${C_GREEN}tordl successfully linked 'tordl' or 'tordl SEARCH_TERM'${C_NONE}\n"
-done
+
+# This ugly expansion is to get the last elem of $LN_CMD in a more compatible way.
+printf ${C_GREEN}
+printf ${C_NONE}
+"${LN_CMD[@]}"
+printf "${C_GREEN}tordl successfully linked 'tordl' or 'tordl SEARCH_TERM'${C_NONE}\n"
