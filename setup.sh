@@ -184,7 +184,6 @@ pip3 install -r "$SCRIPT_DIR/requirements.txt"
 while true; do
 	# This ugly expansion is to get the last elem of $LN_CMD in a more compatible way.
 	printf ${C_GREEN}
-	read -p "Do you want to link tordl.sh to $TORDL_BIN_PATH ? [Y/n]: " choice
 	printf ${C_NONE}
 	"${LN_CMD[@]}"
 	printf "${C_GREEN}tordl successfully linked 'tordl' or 'tordl SEARCH_TERM'${C_NONE}\n"
