@@ -186,14 +186,6 @@ while true; do
 	printf ${C_GREEN}
 	read -p "Do you want to link tordl.sh to $TORDL_BIN_PATH ? [Y/n]: " choice
 	printf ${C_NONE}
-	case "${choice,,}" in
-		''|'y')
-			"${LN_CMD[@]}"
-			printf "${C_GREEN}tordl successfully linked 'tordl' or 'tordl SEARCH_TERM'${C_NONE}\n"
-			break
-		;;
-		'n')
-			break
-		;;
-	esac
+	"${LN_CMD[@]}"
+	printf "${C_GREEN}tordl successfully linked 'tordl' or 'tordl SEARCH_TERM'${C_NONE}\n"
 done
